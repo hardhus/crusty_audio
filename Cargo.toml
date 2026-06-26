@@ -1,0 +1,13 @@
+[package]
+name = "crusty_audio"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+
+crusty_audio_engine = { git = "https://github.com/hardhus/crusty-audio-engine", branch = "main" }
+crusty_audio_lang = { git = "https://github.com/hardhus/crusty-audio-lang", branch = "main" }
